@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<html lang="en">
+<head>
+<title> 생일 추카해 </title>
+
+     <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+body {
+  margin: 0;
+}
+p {
+  color: white;
+}
+.container {
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+.images {
+  width: 100%;
+  height: auto;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    grid-auto-flow: row dense;
+  }
+  .imageFlex1 {
+    display: grid;
+    row-gap: 20px;
+  }
+  .imageFlex2 {
+    display: grid;
+    row-gap: 20px;
+  }
+  .imageFlex3 {
+    display: grid;
+    row-gap: 20px;
+  }
+}
+</style>
+
+
+  </head>
+
+  <body bgcolor='black'>
+
+<p style="text-align:center; margin-top:3%; margin-bottom: 2%;"> hi </p>
+  <div class="container">
+    <div class="images">
+      <div class="imageFlex1">
+        <img src="./image1.jpg">
+        <img src="./image4.jpg">
+        <img src="./image7.jpg">
+        <img src="./image10.jpg">
+        <img src="./image13.jpg">
+        <img src="./image16.jpg">
+      </div>
+    </div>
+    <div class="images">
+      <div class="imageFlex2">
+        <img src="./image2.jpg">
+        <img src="./image5.jpg">
+        <img src="./image8.jpg">
+        <img src="./image11.jpg">
+        <img src="./image14.jpg">
+      </div>
+    </div>
+    <div class="images">
+      <div class="imageFlex3">
+        <img src="./image3.jpg">
+        <img src="./image6.jpg">
+        <img src="./image9.jpg">
+        <img src="./image12.jpg">
+        <img src="./image15.jpg">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
