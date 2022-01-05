@@ -20,15 +20,30 @@ html, body {
 	 overflow: hidden;
 	
 }
- .snowflake {
+ 
+.snowflake {
 	 --size: 1vw;
 	 width: var(--size);
 	 height: var(--size);
-	 background: white;
-	 border-radius: 50%;
-	 position: absolute;
-	 top: -5vh;
-}
+   	 background: pink;
+   	 position: absolute;
+   	 transform: rotate(170deg);
+  }
+  .snowflake::before,
+  .snowflake::after {
+    	content: "";
+	width: var(--size);
+	height: var(--size);
+    	position: absolute;
+    	border-radius: 50%;
+    	background: pink;
+  }
+  .snowflake::before {
+    left: -50%;
+  }
+  .snowflake::after {
+    top: -50%;
+  }
  @keyframes snowfall {
 	 0% {
 		 transform: translate3d(var(--left-ini), 0, 0);
@@ -462,7 +477,7 @@ padding: 30px;
 
   </head>
 
-  <body bgcolor='black'>
+  <body>
 
 <div class="snowflake"></div>
 <div class="snowflake"></div>
